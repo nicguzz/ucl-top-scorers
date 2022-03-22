@@ -6,3 +6,6 @@ Requirements:
 pip install:
 - Django
 - Requests
+
+
+<img src="https://github.com/nicguzz/UCL-Top-Scorers/blob/master/pic.png" width="128"/>
