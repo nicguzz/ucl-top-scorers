@@ -8,4 +8,4 @@ pip install:
 - Requests
 
 
-<img src="https://github.com/nicguzz/UCL-Top-Scorers/blob/master/pic.png" width="128"/>
+<img src="https://github.com/nicguzz/UCL-Top-Scorers/blob/master/pic.png" width="300"/>
