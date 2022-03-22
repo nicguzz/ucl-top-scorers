@@ -1,0 +1,49 @@
+{% extends "./home.html" %}
+
+{% block body %}
+
+
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Pos</th>
+                
+                <th>Player</th>
+                <th>Name</th>
+                <th>Club</th> 
+                <th>Logo</th> 
+                <th>Goals</th>
+                
+            </tr>
+        </thead>
+        {% for player in top_scorers %}
+      <tbody>
+        <tr>
+            <td>
+                {{forloop.counter}}
+            </td>
+            <td>
+                <img src="{{player.profile_pic}}" height="70">
+            </td>
+
+            <td>
+                {{player.name}}
+            </td>
+            
+            <td>
+                
+                {{player.club}}
+                
+                
+            </td>
+            <td><img src="{{player.club_logo}}" height="50"></td>
+            <td>{{player.goals}}</td>
+
+        </tr>
+    </tbody>
+    {% endfor %}
+</table>
+  </div>
+
+{% endblock %}
