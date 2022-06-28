@@ -1,0 +1,23 @@
+#uefa {
+  padding: 15px;
+  border-radius: 50px;
+  object-fit: fill;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.top_scorers {
+  position: absolute;
+  bottom: 200px;
+  left: 250px;
+  color: white;
+  font-size: x-large;
+  background-color: darkred;
+  border-radius: 10px;
+  font-family: 'League Gothic', sans-serif;
+}
+
+@player_name {
+
+
+}
