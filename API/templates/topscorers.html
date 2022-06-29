@@ -8,7 +8,7 @@
     <div class="container">
         <table class="table">
             <thead>
-                <tr>
+                <tr style="background-color: rgb(208, 172, 106);">
                     <th>Pos</th>
                     
                     <th>Player</th>
@@ -26,10 +26,10 @@
                         {{forloop.counter}}
                     </td>
                     <td>
-                        <img src="{{player.profile_pic}}" height="70">
+                        <img id="player_photo" src="{{player.profile_pic}}" height="70">
                     </td>
                     
-                    <td id="player_name">
+                    <td>
                         {{player.name}}
                     </td>
                     

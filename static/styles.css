@@ -1,3 +1,13 @@
+tr, td {
+  background-color: white;
+}
+
+tr th{
+
+  background-color: orange;
+}
+
+
 #uefa {
   padding: 15px;
   border-radius: 50px;
@@ -17,7 +27,24 @@
   font-family: 'League Gothic', sans-serif;
 }
 
-@player_name {
+#player_photo {
+  border-radius: 100px;
+  
+}
+
+@media (max-width: 575px){
+.top_scorers {
+top: 376px;
+bottom: auto;
+left: 98px;
+font-size: medium;
+
+}
+#uefa {
+  width: 543px;
+  height: 300px;
+
+}
 
 
 }

@@ -18,9 +18,9 @@ num = 0
 data = json_load["response"]
 
 
-print("TOP 3 scorers from:")
-print(data[0]['statistics'][0]['league']['name'])
-print()
+# print("TOP 3 scorers from:")
+# print(data[0]['statistics'][0]['league']['name'])
+# print()
 
 
 top_scorers = [{
@@ -65,5 +65,3 @@ for player in data[0:10]:
         num = num + 1
     else:
         top_scorers.append({'name': f"{name}", 'goals': f"{goals}", 'club': f"{club}", 'profile_pic': f"{player_photo}", 'club_logo': f"{club_logo}"})
-
-print(top_scorers)

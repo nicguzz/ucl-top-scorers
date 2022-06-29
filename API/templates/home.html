@@ -1,34 +1,37 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap 4 Example</title>
+  <title>UEFA Champions League</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-</head>
-<body>
+  <link rel="stylesheet" href="{% static 'styles.css' %}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"></head>
 
-    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
-            <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="{% url 'home' %}">UEFA Champions League</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'top' %}">Top Scorers</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Fixtures</a>
-          </li>
-        </ul>
-      </nav>
+  <body class="bg-info">
+  <nav class="navbar navbar-expand-sm bg-primary navbar-dark ">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'home' %}">UEFA Champions League</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'top' %}">Top Scorers</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Fixtures</a>
+      </li>
+    </ul>
+  </nav>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 
 {% block body %}
+<div>
 
-<img src="https://pbs.twimg.com/media/FOIM_PlXoAAKPEk?format=jpg&name=small" alt="500" style="margin-left: 10cm;">
+<img id ="uefa" src="https://wwwimage-us.pplusstatic.com/base/files/seo/ucl_social_1200x627.jpg" alt="500">
+
+<div class="top_scorers">Top Scorers</div>
+</div>
 
 {% endblock %}
 </html>
