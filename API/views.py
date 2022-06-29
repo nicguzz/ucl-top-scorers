@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
-from .foot import top_scorers
+from requests import get
+from .foot import get_top_scorers
 
 
 def home(request):
@@ -8,4 +9,4 @@ def home(request):
 
 def topscorers(request):
 
-    return render(request, 'topscorers.html', {'top_scorers': top_scorers})
+    return render(request, 'topscorers.html', {'top_scorers': get_top_scorers()})
